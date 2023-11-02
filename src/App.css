@@ -5,19 +5,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -39,4 +26,67 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.form-student {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: larger;
+  font-weight: bold;
+  color: #242424;
+  background-color: rgb(240, 169, 82);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  /* width: 65%; */
+}
+
+input {
+  width: 97%;
+  font-size: large;
+  border: 2px solid rgb(224, 165, 93);
+  box-shadow: 0 0 5px rgba(86, 87, 88, 0.7);
+  border-radius: 0.5rem;
+  color: #242424;
+  background-color: rgb(242, 242, 238);
+  margin: 0.5rem 0;
+  padding: 0.3rem;
+}
+
+input::placeholder {
+  color: #797979;
+  font-size: medium;
+}
+
+input[type="date"]::-webkit-datetime-edit {
+  font-size: large;
+  font-weight: 600;
+  color: #797979;
+}
+input:focus {
+  background-color: rgb(252, 249, 171);
+}
+
+.error {
+  margin-top: 1rem;
+  background-color: #c72828;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  color: #f6f2f2;
+}
+
+.error h4 {
+  font-size: larger;
+}
+.error ul {
+  background-color: beige;
+  border-radius: 0.5rem;
+  color: #c72828;
+  text-align: left;
+  font-weight: bold;
+  width: 91%;
+}
+
+.error ul li {
+  padding: 0.5rem 0;
 }
